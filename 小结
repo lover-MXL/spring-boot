@@ -1,0 +1,5 @@
+1.maven仓库中添加eureka-server依赖，注意的地方是 spring boot 和 spring cloud的版本
+    具体版本对应 百度可以找到，这个程序使用的是 spring boot 2.1 对应的 spring cloud 版本是Greenwich
+2.eureka注册中心由启动类添加 @EnableEurekaServer 声明它是一个注册中心服务
+    同时，配置文件中 fetch-registry 和 register-with-eureka都设置成false，表示它是一个注册中心，不必将自己
+       注册到eureka中
